@@ -2,7 +2,7 @@
 
 /**
  * _isalpha - checks if alphabetic character
- * @c int ASCII
+ * @c unsigned int value referenced from ASCII values
  * Return: 1 if c is letter, lowrcase or uppercase OTHERWISE 0
  */
 
