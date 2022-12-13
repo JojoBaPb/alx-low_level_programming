@@ -8,7 +8,7 @@
 
 int main(void)
 {
-	char _putchar[] = "_putchar";
+	char main[] = "_putchar";
 	int i = 0;
 
 	while (main[i] != '\0')
@@ -16,7 +16,7 @@ int main(void)
 		_putchar(main[i]);
 		i++;
 	}
-	_putchar('\n');
+	main('\n');
 
 	return (0);
 }
