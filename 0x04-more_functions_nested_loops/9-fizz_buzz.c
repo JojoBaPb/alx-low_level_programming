@@ -21,11 +21,12 @@ int main(void)
 			printf("Buzz");
 		else
 			printf("%d", i);
-			if (i != 100)
-				printf(" ");
-			i++;
+			
+		if (i != 100)
+			printf(" ");
+		i++;
 	}
 	printf("\n");
 
-	return (0)
+	return (0);
 }	
