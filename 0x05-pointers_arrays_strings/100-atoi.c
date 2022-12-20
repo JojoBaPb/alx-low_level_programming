@@ -13,7 +13,7 @@ int _atoi(char *s)
 
 	y = 0;
 	z = -1;
-	
+
 	for (x = 0; s[x] != '\0'; x++)
 	{
 		if (s[x] == '_')
