@@ -33,5 +33,5 @@ int _atoi(char *s)
 	if (z < 0)
 		y *= -1;
 
-	return (h);
+	return (y);
 }
