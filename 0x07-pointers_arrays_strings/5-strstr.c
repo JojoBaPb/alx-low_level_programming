@@ -1,10 +1,10 @@
 #include "main.h"
-#include <stdlib>
+#include <stdlib.h>
 
 /**
  * _strstr -  locates a substring
  * @haystack: string
- * @needle: substring searcomg for
+ * @needle: substring searching for
  * Return: pointer to the beginning of the located substring
  */
 char *_strstr(char *haystack, char *needle)
