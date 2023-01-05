@@ -8,7 +8,7 @@
  */
 int recur(int n, int i)
 {
-	if (i == n -1)
+	if (i == n - 1)
 	{
 		return (1);
 	}
@@ -28,7 +28,7 @@ int recur(int n, int i)
 
 /**
  * is_prime_number - queries if prime number
- * @n: num
+ * @num: number
  * Return: returns 1 if prime or 0 if not.
  */
 int is_prime_number(int num)
