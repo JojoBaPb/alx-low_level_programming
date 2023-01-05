@@ -10,7 +10,7 @@
 int palindrome_r(char *string, int length, int a)
 {
 	if (a < length && string[a] == string[length])
-		return (palindrome_r(string, length - 1, i + 1));
+		return (palindrome_r(string, length - 1, a + 1));
 	if (string[a] != string[length])
 		return (0);
 	return (1);
