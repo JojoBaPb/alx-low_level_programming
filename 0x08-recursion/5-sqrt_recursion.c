@@ -8,16 +8,16 @@
  */
 int _sqrt_recursion(int n)
 {
-	return (h1(n, 1));
+	return (hl(n, 1));
 }
 
 /**
- * h1 - finds sqr root of of numbers
+ * hl - finds sqr root of of numbers
  * @a: number to find sqr root
  * @b: to be compared with a
  * Return: sqr root or -1
  */
-int h1(int a, int b)
+int hl(int a, int b)
 {
 	int sqr;
 
@@ -25,7 +25,7 @@ int h1(int a, int b)
 	if (sqr == a)
 		return (b);
 	else if (sqr < a)
-		return (h1(a, b + 1));
+		return (hl(a, b + 1));
 	else
 		return (-1);
 }
