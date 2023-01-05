@@ -22,7 +22,7 @@ int h1(int a, int b)
 	int sqr;
 
 	sqr = b * b;
-	if (sqr == c)
+	if (sqr == a)
 		return (b);
 	else if (sqr < a)
 		return (h1(a, b + 1));
