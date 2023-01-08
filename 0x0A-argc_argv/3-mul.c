@@ -3,7 +3,7 @@
 #include <stdio.h>
 
 /**
- * main - multiplies 2 numbers
+ * main - multiplies two numbers
  * @argc: counts argument
  * @argv: argument
  * return: 0 if success, 1 if fail
