@@ -23,7 +23,7 @@ if (c == NULL)
 
 for (b = 0; b < a; b++)
 	c[b] = str[b];
-b[a] = '\0';
+c[b] = '\0';
 
 return (c);
 }
