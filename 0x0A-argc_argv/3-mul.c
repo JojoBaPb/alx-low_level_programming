@@ -3,12 +3,12 @@
 #include <stdio.h>
 
 /**
- * main - multiplies two numbers
+ * main - multiplies two numbers together
  * @argc: counts argument
  * @argv: argument
- * return: 0 if success, 1 if fail
+ * Return: 0 if success, 1 if fail
  */
-int main(int argc, char **argv)
+int main(int argc, char *argv[])
 {
 	(void) argc;
 
