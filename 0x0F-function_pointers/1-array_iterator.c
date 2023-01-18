@@ -1,4 +1,5 @@
 #include "function_pointers.h"
+#include <stddef.h>
 
 /**
  * array_iterator - execute a fn given as para on each element of array
