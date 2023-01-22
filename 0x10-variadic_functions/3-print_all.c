@@ -9,7 +9,7 @@ void print_all(const char * const format, ...)
 {
 	va_list list;
 	unsigned int i = 0, j, k = 0;
-	char *l;
+	char *ln;
 	const char t_arg[] = "cifs";
 
 	va_start(list, format);
@@ -26,23 +26,23 @@ void print_all(const char * const format, ...)
 		}
 		switch (format[i])
 		{
-		case "c":
+		case 'c':
 			printf("%c", va_arg(list, int)), k = 1;
 			break;
-		case "i":
+		case 'i':
 			printf("%d", va_arg(list, int)), k = 1;
 			break;
-		case "f":
+		case 'f':
 			printf("%f", va_arg(list, double)), k = 1;
 			break;
-		case "s":
-			l = va_arg(list, char *), k = 1;
-			if (!l)
+		case 's':
+			ln = va_arg(list, char *), k = 1;
+			if (!ln)
 			{
 				printf("(nil)");
 				break;
 			}
-			printf("%s", l);
+			printf("%s", ln);
 			break;
 		} i++;
 	}
