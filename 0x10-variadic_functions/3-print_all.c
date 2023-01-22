@@ -26,24 +26,24 @@ void print_all(const char * const format, ...)
 		}
 		switch (format[i])
 		{
-			case "c":
-				printf("%c", va_arg(list, int)), k = 1;
+		case "c":
+			printf("%c", va_arg(list, int)), k = 1;
+			break;
+		case "i":
+			printf("%d", va_arg(list, int)), k = 1;
+			break;
+		case "f":
+			printf("%f", va_arg(list, double)), k = 1;
+			break;
+		case "s":
+			l = va_arg(list, char *), k = 1;
+			if (!l)
+			{
+				printf("(nil)");
 				break;
-			case "i":
-				printf("%d", va_arg(list, int)), k = 1;
-				break;
-			case "f":
-				printf("%f", va_arg(list, double)), k = 1;
-				break;
-			case "s":
-				l = va_arg(list, char *), k = 1;
-				if (!l)
-				{
-					printf("(nil)");
-					break;
-				}
-				printf("%s", l);
-				break;
+			}
+			printf("%s", l);
+			break;
 		} i++;
 	}
 	printf("\n"), va_end(list);
