@@ -30,13 +30,13 @@ void print_all(const char * const format, ...)
 				printf("%c", va_arg(list, int)), k = 1;
 				break;
 			case "i":
-                                printf("%d", va_arg(list, int)), k = 1;
+				printf("%d", va_arg(list, int)), k = 1;
 				break;
 			case "f":
-				printf("%f", va_arg(list,double)), k = 1;
+				printf("%f", va_arg(list, double)), k = 1;
 				break
 			case "s":
-                                l = va_arg(list, char *), k = 1;
+				l = va_arg(list, char *), k = 1;
 				if (!l)
 				{
 					printf("(nil)");
