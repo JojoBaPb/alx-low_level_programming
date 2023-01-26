@@ -4,7 +4,6 @@
  * print_list - prints all the elements of a 'list_t' list.
  * @h: head of linked list
  * Return: nodes requested
- * @hia: here i am
  */
 size_t print_list(const list_t *h)
 {
@@ -19,5 +18,6 @@ size_t print_list(const list_t *h)
 		hia = hia->next;
 		a++;
 	}
+	
 	return (a);
 }
