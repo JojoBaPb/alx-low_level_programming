@@ -21,7 +21,7 @@ int create_file(const char *filename, char *text_content)
 	{
 		for (x = 0; text_content[x] != '\0'; x++)
 			;
-		rstatus = write(fd, text_content, x);
+		stat = write(fd, text_content, x);
 		if (stat == -1)
 			return (-1);
 	}
