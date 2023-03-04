@@ -1,6 +1,7 @@
 /**
- * protos and libs for program
+ * File: 100-elf_header.c
  */
+
 #include <elf.h>
 #include <sys/types.h>
 #include <sys/stat.h>
@@ -33,8 +34,8 @@ void check_elf(unsigned char *e_ident)
 	{
 		if (e_ident[index] != 127 &&
 		    e_ident[index] != 'E' &&
-  		    e_ident[index] != 'L' &&
-    		    e_ident[index] != 'F')
+		    e_ident[index] != 'L' &&
+		    e_ident[index] != 'F')
 		{
 			dprintf(STDERR_FILENO, "Error: Not an ELF file\n");
 			exit(98);
@@ -266,7 +267,7 @@ void close_elf(int elf)
  * @argv: An array of pointers to the arguments.
  * Return: 0 on success.
  * Description: If the file is not an ELF File or
-   the function fails - exit code 98.
+ * the function fails - exit code 98.
  */
 int main(int __attribute__((__unused__)) argc, char *argv[])
 {
