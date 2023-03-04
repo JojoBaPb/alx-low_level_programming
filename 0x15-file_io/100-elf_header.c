@@ -1,5 +1,6 @@
 /**
  * File: 100-elf_header.c
+ * @e_ident: Pointer to array of ELF nos
  */
 
 #include <elf.h>
