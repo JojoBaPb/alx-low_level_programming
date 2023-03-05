@@ -42,7 +42,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		poi[x] = s1[x];
 	}
 
-	for (; x < (ss1 + x); x++)
+	for (; x < (ss1 + n); x++)
 	{
 		poi[x] = s2[x - ss1];
 	}
