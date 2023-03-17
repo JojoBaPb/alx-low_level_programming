@@ -12,7 +12,7 @@ dlistint_t *get_dnodeint_at_index(dlistint_t *head, unsigned int index)
 	unsigned int c;
 
 	temp = head;
-	for (c = 0; tmp && c < index; temp = temp->next, c++)
+	for (c = 0; temp && c < index; temp = temp->next, c++)
 		;
 
 	return (temp);
