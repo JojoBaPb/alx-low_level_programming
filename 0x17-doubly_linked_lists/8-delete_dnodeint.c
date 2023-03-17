@@ -2,8 +2,8 @@
 
 /**
  * delete_dnodeint_at_index - Delete node at index of dlistint_t
- * @head: double pointer to head 
- * @index: index position to remove 
+ * @head: double pointer to head
+ * @index: index position to remove
  * Return: 1 if success, -1 if fail
  */
 int delete_dnodeint_at_index(dlistint_t **head, unsigned int index)
@@ -14,7 +14,7 @@ int delete_dnodeint_at_index(dlistint_t **head, unsigned int index)
 	if (*head == NULL)
 		return (-1);
 
-	for (tmp = *head, i = 0, prev = NULL; tmp && c < index; i++)
+	for (tmp = *head, i = 0, prev = NULL; tmp && i < index; i++)
 	{
 		prev = tmp;
 		tmp = tmp->next;
