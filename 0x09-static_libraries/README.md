@@ -1,4 +1,4 @@
-0. static library libmy.a containing all the functions listed below:
+00. static library libmy.a containing all the functions listed below:
 
 int _putchar(char c);
 int _islower(int c);
@@ -21,4 +21,4 @@ unsigned int _strspn(char *s, char *accept);
 char *_strpbrk(char *s, char *accept);
 char *_strstr(char *haystack, char *needle);
 
-1. a script called create_static_lib.sh that creates a static library called liball.a from all the .c files that are in the current directory.
+01. a script called create_static_lib.sh that creates a static library called liball.a from all the .c files that are in the current directory.
